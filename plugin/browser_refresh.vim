@@ -47,4 +47,4 @@ endfunction
 command StartFFRefresh :call s:StartBrowserRefresh()
 command StopFFRefresh :call s:StopBrowserRefresh()
 
-exec 'autocmd BufWritePost ' + g:firefox_refresh_files + ' :call s:RefreshBrowser()':l
+exec 'autocmd BufWritePost ' + g:firefox_refresh_files + ' :call s:RefreshBrowser()'
