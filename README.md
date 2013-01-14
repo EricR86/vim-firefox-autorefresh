@@ -12,8 +12,8 @@ support.
     I would recommended way installing through [Vundle](https://addons.mozilla.org/en-us/firefox/addon/remote-control/).
 	However, you can simply download the repo and install directly into your vim plugin directory.
 
-2. Turn on Remote Control in Firefox for the tab you want to automatically refresh. 
-    Note that after installation you may need to add the toolbar icon manually if it doesn't show up.
+2. Install and turn on Remote Control in Firefox for the tab you want to automatically refresh. 
+    Note that after installing Remote Control, you may need to add the toolbar icon manually if it doesn't show up.
 
 3. Turn on auto-refresh in vim by using the command :StartFFRefresh. To stop
    automatically refreshing the browser, use the command :StopFFRefresh.
@@ -22,7 +22,7 @@ support.
 
 If your browser isn't refreshing for the filetypes you're working on, you might
 need to change the global g:firefox_refresh_files which contains a list of
-extensions to monitor. Currently it defaults to
+extensions to monitor. Currently it defaults to:
 
 ```vim
 g:firefox_refresh_files = '*.html,*.htm,*.php,*.py,*.css,*.js'
@@ -31,8 +31,7 @@ g:firefox_refresh_files = '*.html,*.htm,*.php,*.py,*.css,*.js'
 To change it, modify the global in your `.vimrc`:
 
 ```vim
-" I want to add a custom .django file extension and also ruby filetypes to auto
-refresh
+" I want to add a custom .django file extension and also ruby filetypes to auto refresh
 let g:firefox_refresh_files = g:firefox_refresh_files . ',*.django,*.rb'
 " Maybe I just want to refresh for html, and html only...
 let g:firefox_refresh_files = "*.html"
