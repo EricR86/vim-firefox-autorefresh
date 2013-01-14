@@ -15,7 +15,7 @@ support.
 2. Turn on Remote Control in Firefox for the tab you want to automatically refresh.
 
 3. Turn on auto-refresh in vim by using the command :StartFFRefresh. To stop
-   use the command :StopFFRefresh.
+   automatically refreshing the browser, use the command :StopFFRefresh.
 
 ## Additional Configuration
 
