@@ -39,7 +39,7 @@ function! s:RefreshBrowser()
         "silent exec '!' . s:commandToExecute
         "echo s:commandToExecute
         " This won't open a command window of any kind
-        silent exec 'pyfile' . s:commandToExecute
+        silent exec 'pyfile ' . s:commandToExecute
     endif
 endfunction
 
@@ -47,4 +47,4 @@ endfunction
 command StartFFRefresh :call s:StartBrowserRefresh()
 command StopFFRefresh :call s:StopBrowserRefresh()
 
-exec 'autocmd BufWritePost ' + g:firefox_refresh_files + ' :call s:RefreshBrowser()'
+exec 'autocmd BufWritePost ' . g:firefox_refresh_files . ' :call s:RefreshBrowser()'
