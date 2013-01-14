@@ -23,16 +23,15 @@ If your browser isn't refreshing for the filetypes you're working on, you might
 need to change the global g:firefox_refresh_files which contains a list of
 extensions to monitor. Currently it defaults to
 
-    ```vim
-    g:firefox_refresh_files = '*.html,*.htm,*.php,*.py,*.css,*.js'
-
-    ```
+     ```vim
+     g:firefox_refresh_files = '*.html,*.htm,*.php,*.py,*.css,*.js'
+     ```
 
 To change it, modify the global in your `.vimrc`:
-    
-    ```vim
-    let g:firefox_refresh_files = g:firefox_refresh_files . ",*.django,*.rb"
-    " Maybe I just want to refresh for html, and html only...
-    let g:firefox_refresh_files = "*.html"
 
-    ```
+     ```vim
+     let g:firefox_refresh_files = g:firefox_refresh_files . ",*.django,*.rb"
+     " Maybe I just want to refresh for html, and html only...
+     let g:firefox_refresh_files = "*.html"
+
+     ```
