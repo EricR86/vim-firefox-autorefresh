@@ -9,7 +9,7 @@ support.
 ## Getting Started
 
 1. Download the files:
-    I would recommended way installing through [Vundle](https://addons.mozilla.org/en-us/firefox/addon/remote-control/)
+    I would recommended way installing through [Vundle](https://addons.mozilla.org/en-us/firefox/addon/remote-control/).
 	However, you can simply download the repo and install directly into your vim plugin directory.
 
 2. Turn on Remote Control in Firefox for the tab you want to automatically refresh.
@@ -25,12 +25,14 @@ extensions to monitor. Currently it defaults to
 
     ```vim
     g:firefox_refresh_files = '*.html,*.htm,*.php,*.py,*.css,*.js'
+
     ```
 
-To change it, modify the globla in your `.vimrc`:
+To change it, modify the global in your `.vimrc`:
     
     ```vim
     let g:firefox_refresh_files = g:firefox_refresh_files . ",*.django,*.rb"
     " Maybe I just want to refresh for html, and html only...
     let g:firefox_refresh_files = "*.html"
+
     ```
